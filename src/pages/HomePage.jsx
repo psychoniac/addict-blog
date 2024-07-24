@@ -1,8 +1,12 @@
 const HomePage = () => {
     return (
-        <div className="max-w-screen-xl mx-auto min-h-dvh bg-slate-400">
-            <h3 className="text-2xl text-red-900 font-bold pt-5 text-center">Pourquoi j'ai créer ce blog ?</h3>
-            <div className="max-w-screen-sm mx-auto pt-5">
+        <div className="max-w-screen-xl mx-auto min-h-dvh bg-slate-400 relative">
+            <div>
+                <img src="../lune/lune_nuage_250px.jpg" className="w-full h-full absolute" alt="photo de la lune" />
+            </div>
+            <h3 className="text-2xl text-red-900 font-bold pt-5 left-1/4 z-30 absolute">Pourquoi j'ai créer ce blog ?</h3>
+            
+            <div className="max-w-screen-sm mx-auto pt-5 absolute top-16 left-1/4">
                 <p className="pb-5 text-gray-300 font-extrabold">
                     J'ai décidé de commencer à développer ce blog car aujourd'hui je pense avoir les  compétences pour tout ce qui concerne la technique et j'ai aussi l'éxpérience par rapport à la gestion des consos des produits stups.
                 </p>
