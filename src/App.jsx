@@ -8,13 +8,14 @@ import { AuthProvider } from "./AuthProvider"
 import ContactMe from "./pages/ContactMe"
 import Navbar from "./components/Navbar"
 import ProtectedRoute from "./ProtectedRoute"
+import Header from "./components/Header"
 
 
 const App = () => {
   return (
     <AuthProvider>
-      <div>
-        <Navbar />
+      <div className="">
+        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />

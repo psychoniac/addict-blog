@@ -7,17 +7,18 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className='bg-black'>
-                <Link to='/' className='text-white text-2xl font-bold'>Addiction App</Link>
+            <div className='bg-black min-h-20 flex justify-between items-center'>
                 <div>
                     {currentUser ? (
-                        <div>
-                            <Link to='/profile' className='text-white'>
-                                Profil 
-                            </Link>
+                        <ul>
+                            <li>
+                                <Link to='/profile' className='text-white'>
+                                    Profil 
+                                </Link>
+                            </li>
                             <Link to='/create-post' className='text-white'>Créer un article</Link>
                             <button onClick={() => auth.signOut()} className='text-white'>Déconnexion</button>
-                        </div>
+                        </ul>
                     ) : (
                     <>
                         <Link to='/about' className='text-white'>A propos</Link>
